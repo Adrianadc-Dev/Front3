@@ -1,17 +1,32 @@
-//import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
+
 import './App.css'
-import Navbar from './Components/Navbar'
+import Card from './Components/Card'
+import Saludo from './Components/Saludo'
+
 
 function App() {
   
 
   return (
     <>
-    <Navbar/>
-    <h1>Bienvenidos</h1>
+    <h1>Bienvenido!!</h1>
+    <Card title= "ejemplo 1" text='este es parte del primer ejemplo'/>
+    <Card title= "ejemplo 2" text='este es parte del segundo ejemplo'/>
+    <hr />
+    <h2>reutilizando las card y usando children</h2>
+    
+    <Card title ='ejemplo de children' text='asi se usan los children'>
+      <h4>primer children</h4>
+      <h4>segundo children</h4>
+    </Card>
+    <hr />
+    <Card title ='ejemplo de children numero 2' text='asi se usan los children'>
+      <h4>primer children</h4>
+      <h4>segundo children</h4>
+    </Card>
+    <Saludo text ='juan' />
     </>  
+    
   )
 }
 
